@@ -1,0 +1,11 @@
+[Unit]
+Description=Run flight fetcher every 20 min for update.
+
+[Timer]
+OnBootSec=30sec
+OnUnitActiveSec=20min
+Persistent=true
+Unit=flight-fetcher.service
+
+[Install]
+WantedBy=timers.target

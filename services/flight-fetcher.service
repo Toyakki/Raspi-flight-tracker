@@ -1,0 +1,14 @@
+[Unit]
+Description=Fetch best nearby flight (OpenSky + ADSBDB)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/flighttracker
+EnvironmentFile=/home/pi/flighttracker/.env
+StateDirectory=flighttracker
+StateDirectoryMode=0755
+ExecStart=/home/pi/flighttracker/venv/bin/python /home/pi/flighttracker/api.py

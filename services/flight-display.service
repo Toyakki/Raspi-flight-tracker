@@ -1,0 +1,21 @@
+[Unit]
+Description=OLED flight display
+Requires=dev-i2c.device
+After=dev-i2c.device
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/flighttracker
+StateDirectory=flighttracker
+StateDirectoryMode=0755
+
+# Give the OLED/I2C bus a moment after boot
+ExecStartPre=/bin/sleep 2
+ExecStart=/home/pi/flighttracker/venv/bin/python /home/pi/flighttracker/display.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
