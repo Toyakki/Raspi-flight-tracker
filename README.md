@@ -31,5 +31,6 @@ sudo systemctl restart flight-fetcher.timer
 ```
 
 ## Next steps
-Add a python rate limiter.
-Add a TTL cache.
+Update the documentation. \\
+Add a python rate limiter. \\
+Add a TTL cache. \\
