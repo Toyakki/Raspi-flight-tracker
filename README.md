@@ -29,3 +29,7 @@ sudo systemctl restart flight-display.service
 sudo systemctl restart flight-fetcher.service
 sudo systemctl restart flight-fetcher.timer
 ```
+
+## Next steps
+Add a python rate limiter.
+Add a TTL cache.
