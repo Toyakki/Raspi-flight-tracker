@@ -8,15 +8,13 @@ I bought:
 ![Working demo](/assets/success.jpeg)
 
 ## Special thanks
-These projects would not work without these api providers. A special shout-out to them:
+These projects would not be completed without these api providers! A special shout-out to them:
 1. <a href='https://github.com/mrjackwills/adsbdb'>ADSDB api</a>
 2. <a href="https://opensky-network.org/">OpenSky network</a>
 
 
 ## How to run the given scripts on Raspberry Pi
-
 Instructions coming soon!
-
 
 ## Restarting the services after re-plugging pi.
 ```bash
